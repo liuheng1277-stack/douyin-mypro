@@ -145,7 +145,7 @@ class _ProfilePageState extends State<ProfilePage> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: themeProvider.primaryColor.withOpacity(0.3),
+            color: themeProvider.primaryColor.withValues(alpha: 0.3),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -202,7 +202,7 @@ class _ProfilePageState extends State<ProfilePage> {
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 12),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.8),
+            color: Colors.white.withValues(alpha: 0.8),
             borderRadius: BorderRadius.circular(12),
           ),
           child: Column(children: children),
